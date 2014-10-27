@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+@import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap.min.css);
+@import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap-responsive.min.css);
+@import url(http://postach.io/static/themes/_assets/less/mixins.less);
+@import url(http://postach.io/static/themes/_assets/less/elements.less);
+
+body {
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+a {
+  color: #2eb18d;
+  &:visited {
+    color: #2eb18d;
+  }
+  &:active {
+    color: #d84c30;
+  }
+  &:hover {
+    color: #d84c30;
+  }
+}
+
+p {
+  color: #333333;
+}
+
+.navbar {
+  box-shadow: 0;
+  -webkit-box-shadow: 0;
+  border-bottom: 0;
+}
+.navbar-inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2eb18d;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border-bottom: 0;
+}
+
+a.brand, a.brand:link, a.brand:visited {
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  &:hover {
+    color: #333;
+  }
+}
+
+.nav li a,
+.nav li a:link,
+.nav li a:visited,
+.nav li a:hover,
+.nav li.active a,
+.nav li.active a:link,
+.nav li.active a:visited,
+.nav li.active:hover a,
+.nav li.active:hover a:link,
+.nav li.active:hover a:visited,
+.nav {
+  color: #ffffff;
+  text-shadow: none;
+  background: none;
+  .box-shadow(none);
+}
+.nav li:hover a,
+.nav li:hover a:link,
+.nav li:hover a:visited,
+.nav li.active a:link {
+  color: #333;
+}
+.nav li a {
+  padding-right: 0 !important;
+}
+.nav li a:hover,
+.nav li a.active {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  font-weight: 400 !important;
+}
+.post .post-content {
+  .content(30px);
+}
+.post .image {
+  margin-top: 20px;
+}
+.post h1 {
+  font-size: 28px;
+  margin-top: 15px;
+  font-weight: 300;
+}
+.post h2 { font-size: 24px; line-height: 34px; }
+.post h3 { font-size: 20px; line-height: 30px; }
+.post h4 { font-size: 16px; line-height: 26px; }
+.post h5 { font-size: 12px; line-height: 22px; }
+.post h6 { font-size: 8px; line-height: 18px; }
+.post pre {
+  margin: 20px 0;
+}
+.post .link-url {
+  display: block;
+  padding-top: 20px;
+}
+.post p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.post ul,
+.post ol {
+  margin-left: 40px;
+  li {
+    line-height: 24px;
+  }
+}
+
+.bio {
+  position: relative;
+  background-color: #F5F5F5;
+  border-top: 2px solid #2eb18d;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 50px 30px 30px 30px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.bio img.avatar {
+  position: absolute;
+  top: -33px;
+  left: 25px;
+  width: 66px;
+  height: 66px;
+  .rounded(50%);
+}
+
+.bio p {
+  margin: 0;
+  padding: 0;
+}
+
+.bio ul {margin-top: 20px;}
+
+ul.tags {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.post ul.tags {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.pagination {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .post-prev,
+  .post-next {
+    padding: 10px 15px;
+  }
+  .post-prev {
+    float: left;
+  }
+  .post-next {
+    float: right;
+    text-align: right
+  }
+}
+
+ul.social {
+  li {
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  background-color: #F5F5F5;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.post-pdf {
+  position: relative;
+  .pdf-fullscreen {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #000;
+    font-size: 12px;
+    background-color: #2eb18d;
+    padding: 10px;
+    border-radius: 7px;
+    .opacity(0.3);
+    .transition(opacity 0.1s ease-in);
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 0;
+    &:hover {
+      color: #fff;
+      .opacity(1);
+    }
+  }
+  object {
+    display: block;
+    min-height: 400px
+  }
+}
+
+.socialbar-container {
+  display: block;
+  .clearfix;
+  a, .socialbar-share-container {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.post {
+    .socialbar-container {
+        clear: both;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 980px) {
+  body {
+    padding-top: 120px;
+  }
+}
+
+@import url(http://postach.io/static/themes/_assets/less/login.less);
+
