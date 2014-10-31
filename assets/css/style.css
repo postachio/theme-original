@@ -178,19 +178,21 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #2eb18d;
+  color: #007AFF;
 }
 a:visited {
-  color: #2eb18d;
+  color: #007AFF;
 }
 a:active {
-  color: #d84c30;
+  color: #007AFF;
 }
 a:hover {
-  color: #d84c30;
+  color: #007AFF;
+  text-decoration: underline;
+
 }
 p {
-  color: #333333;
+  color: #000000;
 }
 .navbar {
   box-shadow: 0;
@@ -200,7 +202,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #2eb18d;
+  background-color: #007AFF;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -441,7 +443,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid #2eb18d;
+  border-top: 2px solid #007AFF;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
@@ -522,7 +524,7 @@ footer {
   left: 30px;
   color: #000;
   font-size: 12px;
-  background-color: #2eb18d;
+  background-color: #007AFF;
   padding: 10px;
   border-radius: 7px;
   -moz-opacity: 0.3;
@@ -626,7 +628,7 @@ footer {
 .login input.input-submit {
   color: #fff;
   border: 0;
-  background-color: #2eb18d;
+  background-color: #007AFF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
