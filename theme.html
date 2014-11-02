@@ -35,6 +35,7 @@
 
   </head>
   <body>
+    {% set allowed_tags = ["__tag1__"] %}
     {% if is_login %}
 
       {{ login_form }}
@@ -124,9 +125,12 @@
 
             {% if post.tags %}
             <ul class="tags">
-              {% for tag in post.tags %}
-                <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+              {% for tag in post.tags %}                
+                {% if tag in allowed_tags %}
+                  <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                {% endif %}
               {% endfor %}
+
             </ul>
             {% endif %}
 
@@ -169,7 +173,9 @@
             {% if post.tags %}
             <ul class="tags">
               {% for tag in post.tags %}
-                <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                {% if tag in allowed_tags %}
+                  <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                {% endif %}
               {% endfor %}
             </ul>
             {% endif %}
@@ -254,7 +260,9 @@
             {% if site.tags %}
             <ul class="tags">
               {% for tag in site.tags %}
-                <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+                {% if tag.name in allowed_tags %}
+                  <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+                {% endif %}
               {% endfor %}
             </ul>
             {% endif %}
