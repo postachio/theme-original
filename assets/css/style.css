@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #2eb18d;
+  color: #b82a41;
 }
 a:visited {
-  color: #2eb18d;
+  color: #b82a41;
 }
 a:active {
-  color: #d84c30;
+  color: #6fc5c8;
 }
 a:hover {
-  color: #d84c30;
+  color: #6fc5c8;
 }
 p {
   color: #333333;
@@ -200,28 +200,44 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #2eb18d;
-  background-image: none;
-  background-repeat: no-repeat;
+  background-color: #b82a41;
+  background: url('../images/red-noise.png') repeat;
   filter: none;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   border-bottom: 0;
 }
+.navbar ul.nav.pull-right {
+  margin-top: 13px;
+}
+.navbar ul.nav.pull-right a {
+  color: #ffffff;
+}
+.navbar ul.nav.pull-right a:visited {
+  color: #ffffff;
+}
+.navbar ul.nav.pull-right a:hover {
+  color: #333333;
+}
+.navbar ul.nav.pull-right a:active {
+  color: #ffffff;
+}
 a.brand,
 a.brand:link,
 a.brand:visited {
-  font-size: 20px;
-  color: #ffffff;
-  text-shadow: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  background: url('../images/ca-vou-eu.png') no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  height: 44px;
+  width: 243px;
+  margin-top: 10px;
 }
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-  color: #333;
+  background: url('../images/ca-vou-eu.gif') no-repeat;
 }
 .nav li a,
 .nav li a:link,
@@ -245,7 +261,7 @@ a.brand:visited:hover {
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
-  color: #333;
+  color: #333333;
 }
 .nav li a {
   padding-right: 0 !important;
@@ -438,17 +454,17 @@ h6 {
 .post ol li {
   line-height: 24px;
 }
-.bio {
+.side-links {
   position: relative;
-  background-color: #F5F5F5;
-  border-top: 2px solid #2eb18d;
+  background-color: #f5f5f5;
+  border-top: 2px solid #b82a41;
   margin-top: 30px;
   margin-bottom: 20px;
-  padding: 50px 30px 30px 30px;
+  padding: 30px;
   font-size: 12px;
   color: #666666;
 }
-.bio img.avatar {
+.side-links img.avatar {
   position: absolute;
   top: -33px;
   left: 25px;
@@ -458,11 +474,11 @@ h6 {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.bio p {
+.side-links p {
   margin: 0;
   padding: 0;
 }
-.bio ul {
+.side-links ul {
   margin-top: 20px;
 }
 ul.tags {
@@ -507,7 +523,7 @@ ul.social li a:hover {
   text-decoration: none;
 }
 footer {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 40px;
   padding: 20px;
   font-size: 12px;
@@ -522,7 +538,7 @@ footer {
   left: 30px;
   color: #000;
   font-size: 12px;
-  background-color: #2eb18d;
+  background-color: #b82a41;
   padding: 10px;
   border-radius: 7px;
   -moz-opacity: 0.3;

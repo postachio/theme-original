@@ -1,2 +1,4 @@
-/node_modules/
+node_modules/
+test/
+test_server.py
 .DS_Store
