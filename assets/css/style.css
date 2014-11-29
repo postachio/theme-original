@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #2eb18d;
+  color: #0099ff;
 }
 a:visited {
-  color: #2eb18d;
+  color: #0099ff;
 }
 a:active {
-  color: #d84c30;
+  color: #0099ff;
 }
 a:hover {
-  color: #d84c30;
+  color: #0099ff;
 }
 p {
   color: #333333;
@@ -626,7 +626,7 @@ footer {
 .login input.input-submit {
   color: #fff;
   border: 0;
-  background-color: #2eb18d;
+  background-color: #0099ff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
