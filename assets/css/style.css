@@ -522,7 +522,7 @@ footer {
   left: 30px;
   color: #000;
   font-size: 12px;
-  background-color: #2eb18d;
+  background-color: #0099ff;
   padding: 10px;
   border-radius: 7px;
   -moz-opacity: 0.3;
@@ -647,7 +647,7 @@ footer {
 }
 .login .login-error {
   display: block;
-  background-color: #f76643;
+  background-color: #0099ff;
   color: #fff;
   font-size: 10pt;
   line-height: 10pt;
