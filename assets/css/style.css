@@ -654,6 +654,6 @@ footer {
   padding: 7px;
 }
 
-.icon-tumblr-sign:before {
+i.icon-tumblr-sign:before {
     content: "\f173"
 }
