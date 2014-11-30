@@ -653,3 +653,7 @@ footer {
   line-height: 10pt;
   padding: 7px;
 }
+
+.icon-tumblr-sign:before {
+    content: "\f173"
+}
