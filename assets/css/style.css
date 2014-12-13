@@ -1,6 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
 @import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap.min.css);
 @import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap-responsive.min.css);
+
+@import url('http://fontweb.ir/css/B Nazanin={fontweb.ir}.css');
+*{font-family:B Nazanin,'B Nazanin',tahoma;}
 /**
  * Utilities
  * Mixins used throughout themes and the main site
