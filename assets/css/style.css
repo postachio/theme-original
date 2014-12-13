@@ -254,11 +254,13 @@ h3,
 h4,
 h5,
 h6 {
+  direction:rtl;
   font-family: font-family:B Nazanin,'B Nazanin',tahoma;
   margin-top: 20px;
   font-weight: 400 !important;
 }
 .post .post-content {
+  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
   font-size:14px;
   direction:rtl;
   display: block;
@@ -271,7 +273,6 @@ h6 {
 .post .post-content div,
 .post .post-content b,
 .post .post-content i {
-  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
   font-size:23px;
   text-align: justify;
   direction:rtl;
