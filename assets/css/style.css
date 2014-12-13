@@ -255,12 +255,12 @@ h4,
 h5,
 h6 {
   direction:rtl;
-  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
+  font-family:B Nazanin,'B Nazanin',tahoma;
   margin-top: 20px;
   font-weight: 400 !important;
 }
 .post .post-content {
-  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
+  font-family:B Nazanin,'B Nazanin';
   font-size:14px;
   direction:rtl;
   display: block;
