@@ -273,10 +273,11 @@ h6 {
 .post .post-content div,
 .post .post-content b,
 .post .post-content i {
+  color:#444;
   font-size:23px;
   text-align: justify;
   direction:rtl;
-  line-height:27px !important
+  line-height:25px !important
 }
 .post .post-content ul strong,
 .post .post-content ol strong,
