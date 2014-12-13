@@ -2,15 +2,7 @@
 @import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap-responsive.min.css);
 
 @import url('http://fontweb.ir/css/B Nazanin={fontweb.ir}.css');
-*{font-family:B Nazanin,'B Nazanin',tahoma;}
-/**
- * Utilities
- * Mixins used throughout themes and the main site
- */
-/**
- * REM units mixin with PX fallback for legacy browsers with no REM unit support
- * https://github.com/christopher-ramirez/remixings
- */
+
 .hide {
   display: none;
 }
@@ -177,7 +169,7 @@
 /* IE7 */
 /* used for styling post content in themes */
 body {
-  font-family: 'Open Sans', helvetica, sans-serif;
+  font-family:verdana;
 }
 a {
   color: #2eb18d;
@@ -262,10 +254,13 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
   margin-top: 20px;
   font-weight: 400 !important;
 }
 .post .post-content {
+  font-size:14px;
+  direction:rtl;
   display: block;
 }
 .post .post-content ul,
@@ -276,7 +271,11 @@ h6 {
 .post .post-content div,
 .post .post-content b,
 .post .post-content i {
-  text-align: left;
+  font-family: font-family:B Nazanin,'B Nazanin',tahoma;
+  font-size:23px;
+  text-align: justify;
+  direction:rtl;
+  line-height:27px !important
 }
 .post .post-content ul strong,
 .post .post-content ol strong,
@@ -325,7 +324,7 @@ h6 {
 }
 .post .post-content ul {
   padding: 7.5px 0 11.25px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 .post .post-content ul li {
   padding: 0;
@@ -334,7 +333,7 @@ h6 {
 }
 .post .post-content ol {
   padding: 7.5px 0 11.25px;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 .post .post-content ol li {
   padding: 0;
@@ -429,6 +428,7 @@ h6 {
   padding-top: 20px;
 }
 .post p {
+  font-family:verdana !important;
   font-size: 14px;
   line-height: 24px;
 }
