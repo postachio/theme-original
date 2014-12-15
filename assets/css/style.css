@@ -1,5 +1,5 @@
 @import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap.min.css);
-@import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap-responsive.min.css);
+
 @import url('http://fontweb.ir/css/B Nazanin={fontweb.ir}.css');
 
 .hide {
@@ -273,10 +273,10 @@ h6 {
 .post .post-content b,
 .post .post-content i {
   color:#444;
-  font-size:23px;
+  font-size:22px;
   text-align: justify;
   direction:rtl;
-  line-height:25px !important
+  line-height:26px !important
 }
 .post .post-content ul strong,
 .post .post-content ol strong,
