@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
@@ -74,7 +73,6 @@
               {% if not is_login %}
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                  <li><a href="/">Blog</a></li>
                   {% if pages %}
                   {% for page in pages %}
                   <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
@@ -92,7 +90,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="span6 offset1">
+        <div class="span10 offset1">
 
         {% if is_home or is_tag %}
 
@@ -106,7 +104,7 @@
           {% if posts %}
           {% for post in posts %}
           <div class="row post">
-            <div class="span6">
+            <div class="span10">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
 
@@ -154,25 +152,6 @@
 
           </div>
 
-          {% if site.disqus %}
-          <hr />
-
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname = '{{ site.disqus }}';
-            var disqus_url = '{{site.base_url}}{{ post.permalink }}';
-            (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-          <noscript>
-            Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-          </noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          {% endif %}
-
         {% elif is_link %}
 
           <div class="post">
@@ -197,25 +176,6 @@
             {% endif %}
           </div>
 
-          {% if site.disqus %}
-          <hr />
-
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname = '{{ site.disqus }}';
-            var disqus_url = '{{site.base_url}}{{ post.permalink }}';
-            (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-          <noscript>
-            Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-          </noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          {% endif %}
-
         {% elif is_page %}
 
           <div class="post">
@@ -229,7 +189,7 @@
         </div>
 
         {% if not is_login %}
-          <span class="span3 offset1">
+          <span class="span10 offset1">
             <div class="bio">
               <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" />
               <p>{{ site.bio }}</p>
@@ -245,10 +205,6 @@
             {% endif %}
           </span>
         {% endif %}
-      </div>
-
-      <div class="row">
-        <div class="span10 offset1">
           <footer>
             &copy; <a href="/">{{ site.name }}</a>. Powered by <a href="http://postach.io" target="_blank">Postach.io</a>
             {% if not is_login %}
@@ -262,7 +218,6 @@
               </ul>
             {% endif %}
           </footer>
-        </div>
       </div>
     </div>
 
