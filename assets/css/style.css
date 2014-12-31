@@ -212,7 +212,7 @@ a.brand,
 a.brand:link,
 a.brand:visited {
   font-size: 20px;
-  color: #54BDEE;
+  color: #ffffff;
   text-shadow: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -221,7 +221,7 @@ a.brand:visited {
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-  color: #333;
+  color: #54BDEE;
 }
 .nav li a,
 .nav li a:link,
@@ -234,7 +234,7 @@ a.brand:visited:hover {
 .nav li.active:hover a:link,
 .nav li.active:hover a:visited,
 .nav {
-  color: #54BDEE;
+  color: #ffffff;
   text-shadow: none;
   background: none;
   -webkit-box-shadow: none;
@@ -245,7 +245,7 @@ a.brand:visited:hover {
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
-  color: #333;
+  color: #54BDEE;
 }
 .nav li a {
   padding-right: 0 !important;
