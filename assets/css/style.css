@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #808080;
+  color: #292626;
 }
 a:visited {
-  color: #808080;
+  color: #292626;
 }
 a:active {
   color: #3B94DA;
 }
 a:hover {
-  color: #696969;
+  color: #292626;
 }
 p {
   color: #333333;
@@ -441,7 +441,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid #696969;
+  border-top: 2px solid black;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
