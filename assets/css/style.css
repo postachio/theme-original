@@ -178,7 +178,7 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #54BDEE;
+  color: #0990D0;
 }
 a:visited {
   color: #0990D0;
@@ -200,7 +200,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #54BDEE;
+  background-color: #0990D0;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -441,7 +441,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid black;
+  border-top: 2px solid #0990D0;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
