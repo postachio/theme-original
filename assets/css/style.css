@@ -221,7 +221,7 @@ a.brand:visited {
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-  color: #F0F0F0 ;
+  color: #F8F8F8  ;
 }
 .nav li a,
 .nav li a:link,
@@ -245,7 +245,7 @@ a.brand:visited:hover {
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
-  color: #F0F0F0 ;
+  color: #F8F8F8  ;
 }
 .nav li a {
   padding-right: 0 !important;
