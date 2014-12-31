@@ -187,7 +187,7 @@ a:active {
   color: #3B94DA;
 }
 a:hover {
-  color: black;
+  color: #696969;
 }
 p {
   color: #333333;
@@ -200,7 +200,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: black;
+  background-color: #696969;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -441,7 +441,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid black;
+  border-top: 2px solid #696969;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
@@ -626,7 +626,7 @@ footer {
 .login input.input-submit {
   color: #fff;
   border: 0;
-  background-color: black;
+  background-color: #696969;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
