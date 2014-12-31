@@ -181,13 +181,13 @@ a {
   color: #3B94DA;
 }
 a:visited {
-  color: #2eb18d;
+  color: #3B94DA;
 }
 a:active {
-  color: #d84c30;
+  color: #3B94DA;
 }
 a:hover {
-  color: #d84c30;
+  color: black;
 }
 p {
   color: #333333;
@@ -200,7 +200,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #2eb18d;
+  background-color: black;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -441,7 +441,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid #2eb18d;
+  border-top: 2px solid black;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
