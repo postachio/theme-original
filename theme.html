@@ -149,7 +149,6 @@
               {% for tag in post.tags %}
                 <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
               {% endfor %}
-              <br />
             </ul>
             {% endif %}
 
@@ -278,7 +277,7 @@
             {% if site.tags %}
             <ul class="tags">
               {% for tag in site.tags %}
-                <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+                <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li><br />
               {% endfor %}
             </ul>
             {% endif %}
