@@ -147,8 +147,9 @@
             {% if post.tags %}
             <ul class="tags">
               {% for tag in post.tags %}
-                <li><a href="/tag/{{ tag }}">#{{ tag }}</a><br /></li>
+                <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
               {% endfor %}
+              <br />
             </ul>
             {% endif %}
 
