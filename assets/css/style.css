@@ -212,7 +212,7 @@ a.brand,
 a.brand:link,
 a.brand:visited {
   font-size: 20px;
-  color: #ffffff;
+  color: #54BDEE;
   text-shadow: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -234,7 +234,7 @@ a.brand:visited:hover {
 .nav li.active:hover a:link,
 .nav li.active:hover a:visited,
 .nav {
-  color: #ffffff;
+  color: #54BDEE;
   text-shadow: none;
   background: none;
   -webkit-box-shadow: none;
