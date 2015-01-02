@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #1A0DAB;
+  color: #4285F4;
 }
 a:visited {
-  color: #660099;
+  color: #1A0DAB;
 }
 a:active {
   color: #1A0DAB;
 }
 a:hover {
-  color: #660099;
+  color: #1A0DAB;
 }
 p {
   color: #333333;
