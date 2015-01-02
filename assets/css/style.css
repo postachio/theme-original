@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #2eb18d;
+  color: #4285F4;
 }
 a:visited {
-  color: #2eb18d;
+  color: #4285F4;
 }
 a:active {
-  color: #d84c30;
+  color: #4285F4;
 }
 a:hover {
-  color: #d84c30;
+  color: #1A0DAB;
 }
 p {
   color: #333333;
@@ -200,7 +200,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #2eb18d;
+  background-color: #4285F4;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -221,7 +221,7 @@ a.brand:visited {
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
-  color: #333;
+  color: #F8F8F8  ;
 }
 .nav li a,
 .nav li a:link,
@@ -245,7 +245,7 @@ a.brand:visited:hover {
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
-  color: #333;
+  color: #F8F8F8  ;
 }
 .nav li a {
   padding-right: 0 !important;
@@ -441,7 +441,7 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid #2eb18d;
+  border-top: 2px solid #4285F4;
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
@@ -522,7 +522,7 @@ footer {
   left: 30px;
   color: #000;
   font-size: 12px;
-  background-color: #2eb18d;
+  background-color: black;
   padding: 10px;
   border-radius: 7px;
   -moz-opacity: 0.3;
@@ -626,7 +626,7 @@ footer {
 .login input.input-submit {
   color: #fff;
   border: 0;
-  background-color: #2eb18d;
+  background-color: black;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
