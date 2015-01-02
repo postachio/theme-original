@@ -221,7 +221,11 @@ a.brand:visited {
 a.brand:hover,
 a.brand:link:hover,
 a.brand:visited:hover {
+<<<<<<< HEAD
   color: #333;
+=======
+  color: #F0F0F0 ;
+>>>>>>> parent of 553749c... even lighter still
 }
 .nav li a,
 .nav li a:link,
@@ -245,7 +249,11 @@ a.brand:visited:hover {
 .nav li:hover a:link,
 .nav li:hover a:visited,
 .nav li.active a:link {
+<<<<<<< HEAD
   color: #333;
+=======
+  color: #F0F0F0 ;
+>>>>>>> parent of 553749c... even lighter still
 }
 .nav li a {
   padding-right: 0 !important;
