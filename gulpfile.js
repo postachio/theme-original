@@ -7,17 +7,20 @@ var gulp = require('gulp'),
     
 // run
 gulp.task('default', function() {
-    
+  
+  // easier to read variable
+  var themeName = 'original';
+  
   // less
-  gulp.src('./assets/less/original.less')
+  gulp.src('/assets/less/' + themeName + '.less')
     .pipe(less({ paths: [path.join(__dirname, 'less', 'includes')]}))
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('./assets/css/'));
+    .pipe(gulp.dest('/assets/css/'));
 
   // uglify
-  gulp.src('./assets/js/original.js')
+  gulp.src('/assets/js/' + themeName + '.js')
     .pipe(uglify())
-    .pipe(rename('original.min.js'))
-    .pipe(gulp.dest('./assets/js/'));
+    .pipe(rename(themeName + '.min.js'))          
+    .pipe(gulp.dest('/assets/js/'));
   
 });
