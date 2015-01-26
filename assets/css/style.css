@@ -347,7 +347,8 @@ h6 {
   padding-top: 15px;
 }
 .post .post-content img {
-  max-width: 100%;
+  max-width: 600px;
+  max-height:500px;
 }
 .post .post-content .mejs-container {
   margin-top: 7.5px;
