@@ -178,16 +178,16 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 a {
-  color: #2eb18d;
+  color: #0099ff;
 }
 a:visited {
-  color: #2eb18d;
+  color: #0099ff;
 }
 a:active {
-  color: #d84c30;
+  color: #0099ff;
 }
 a:hover {
-  color: #d84c30;
+  color: #0099ff;
 }
 p {
   color: #333333;
@@ -200,7 +200,7 @@ p {
 .navbar-inner {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #2eb18d;
+  background-color: #0099ff;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -347,7 +347,8 @@ h6 {
   padding-top: 15px;
 }
 .post .post-content img {
-  max-width: 100%;
+  max-width: 600px;
+  max-height:500px;
 }
 .post .post-content .mejs-container {
   margin-top: 7.5px;
@@ -441,8 +442,9 @@ h6 {
 .bio {
   position: relative;
   background-color: #F5F5F5;
-  border-top: 2px solid #2eb18d;
+  border-top: 2px solid #0099ff;
   margin-top: 30px;
+  margin-right:20px;
   margin-bottom: 20px;
   padding: 50px 30px 30px 30px;
   font-size: 12px;
@@ -522,7 +524,7 @@ footer {
   left: 30px;
   color: #000;
   font-size: 12px;
-  background-color: #2eb18d;
+  background-color: #0099ff;
   padding: 10px;
   border-radius: 7px;
   -moz-opacity: 0.3;
@@ -626,7 +628,7 @@ footer {
 .login input.input-submit {
   color: #fff;
   border: 0;
-  background-color: #2eb18d;
+  background-color: #0099ff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -647,9 +649,17 @@ footer {
 }
 .login .login-error {
   display: block;
-  background-color: #f76643;
+  background-color: #0099ff;
   color: #fff;
   font-size: 10pt;
   line-height: 10pt;
   padding: 7px;
 }
+
+.icon-tumblr:before {
+    content: "\f173"
+}
+.icon-instagram:before {
+    content: "\f16d"
+}
+
