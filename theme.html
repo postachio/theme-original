@@ -161,12 +161,11 @@ $(".post").each(function(index){
 
           </div>
 
-          {% if site.disqus %}
           <hr />
 
           <div id="disqus_thread"></div>
           <script type="text/javascript">
-            var disqus_shortname = '{{ site.disqus }}';
+            var disqus_shortname = 'thewarriorblog';
             var disqus_url = '{{site.base_url}}{{ post.permalink }}';
             (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -178,7 +177,6 @@ $(".post").each(function(index){
             Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
           </noscript>
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          {% endif %}
 
         {% elif is_link %}
 
@@ -204,12 +202,11 @@ $(".post").each(function(index){
             {% endif %}
           </div>
 
-          {% if site.disqus %}
           <hr />
 
           <div id="disqus_thread"></div>
           <script type="text/javascript">
-            var disqus_shortname = '{{ site.disqus }}';
+            var disqus_shortname = 'thewarriorblog';
             var disqus_url = '{{site.base_url}}{{ post.permalink }}';
             (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -221,7 +218,6 @@ $(".post").each(function(index){
             Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
           </noscript>
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          {% endif %}
 
         {% elif is_page %}
 
