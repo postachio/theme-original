@@ -74,7 +74,6 @@
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   <li><a href="/">Blog</a></li>
-                  <li><a href="/tag/hobby" class="{{ set_active('/tag/hobby') }}">Hobby</a></li>
                   {% if pages %}
                   {% for page in pages %}
                   <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
