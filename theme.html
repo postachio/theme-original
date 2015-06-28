@@ -56,7 +56,7 @@
               {% if not is_login %}
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                  <li><a href="/" class="{{ set_active('/servicos') }}">Página Inicial</a></li>
+                  <li><a href="/" class="{{ set_active('/') }}">Página Inicial</a></li>
                   <li><a href="/servicos" class="{{ set_active('/servicos') }}">Serviços</a></li>
                   <li><a href="/guias" class="{{ set_active('/guias') }}">Guias</a></li>
                   <li><a href="/quem-somos" class="{{ set_active('/quem-somos') }}">Quem Somos</a></li>
@@ -227,11 +227,11 @@
         {% if not is_login %}
           <span class="span3 offset1">
 
-            <a class="side-box munique" href="/guia-ca-vou-eu-munique">
+            <a class="side-box munique" href="/guia-ca-vou-eu-munique" title="Emigrar para Munique" >
               <h2>Guia Cá Vou Eu Munique</h2>
             </a>
 
-            <a class="side-box form" href="http://form.cavoueu.com/">
+            <a class="side-box form" href="http://form.cavoueu.com/" title="Quero ir para a Alemanha<" target="_blank">
               <h2>Quero ir para a Alemanha</h2>
             </a>
 
