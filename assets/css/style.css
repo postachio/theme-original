@@ -259,16 +259,16 @@ a.brand:visited:hover {
 }
 .nav li:hover a,
 .nav li:hover a:link,
-.nav li:hover a:visited,
-.nav li.active a:link {
-  color: #333333;
+.nav li:hover a:visited {
+  color: #b82a41;
 }
 .nav li a {
   padding-right: 0 !important;
 }
-.nav li a:hover,
-.nav li a.active {
+.nav li a.active,
+.nav li:hover a.active:hover {
   font-weight: bold;
+  color: #ffffff;
 }
 h1,
 h2,
@@ -454,13 +454,60 @@ h6 {
 .post ol li {
   line-height: 24px;
 }
+.row .post h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 0px;
+}
+.posts-index {
+  position: relative;
+  display: block;
+  border-top: 2px solid #333;
+  margin-top: 30px;
+}
+.posts-index h4 {
+  background: url('../images/red-noise.png') repeat;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 0 17px 0;
+  padding: 9px 14px;
+}
+.side-box {
+  position: relative;
+  display: block;
+  border-top: 2px solid #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 99px;
+}
+.side-box h2 {
+  background: url('../images/red-noise.png') repeat;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 2em 0;
+  padding-left: 14px;
+}
+a.side-box:hover {
+  text-decoration: none;
+}
+a.side-box:hover h2 {
+  background: none;
+  color: #ffffff;
+}
+.munique {
+  background: url('../images/munique.jpg') center;
+}
+.form {
+  background: url('../images/form.jpg') center;
+}
 .side-links {
   position: relative;
   background-color: #f5f5f5;
   border-top: 2px solid #b82a41;
   margin-top: 30px;
   margin-bottom: 20px;
-  padding: 30px;
+  padding: 5px 1px 10px 30px;
   font-size: 12px;
   color: #666666;
 }

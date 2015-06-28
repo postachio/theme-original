@@ -105,16 +105,16 @@ a.brand, a.brand:link, a.brand:visited {
 }
 .nav li:hover a,
 .nav li:hover a:link,
-.nav li:hover a:visited,
-.nav li.active a:link {
-  color: @text-color;
+.nav li:hover a:visited {
+  color: @link-base-color;
 }
 .nav li a {
   padding-right: 0 !important;
 }
-.nav li a:hover,
-.nav li a.active {
+.nav li a.active,
+.nav li:hover a.active:hover {
   font-weight: bold;
+  color: @page-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,13 +156,77 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.row .post {
+  h2 {
+    margin:       0;
+    font-size:   16px; 
+    line-height: 0px;  
+  }
+
+}
+
+
+.posts-index {
+  position: relative;
+  display: block;
+  border-top: 2px solid #333;
+  margin-top: 30px;
+  h4 {
+    //background-color: rgba(0,0,0,0.4);
+    background: url('../images/red-noise.png') repeat;
+    color: @page-color;
+    font-size: 14px;
+    margin: 0 0 17px 0;
+    padding: 9px 14px;
+  }
+}
+
+
+
+.side-box {
+  position: relative;
+  display: block;
+  border-top: 2px solid #333;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 99px;
+  h2 {
+    //background-color: rgba(0,0,0,0.4);
+    background: url('../images/red-noise.png') repeat;
+    color: @page-color;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 2em 0;
+    padding-left: 14px;
+  }
+}
+
+a.side-box:hover {
+  text-decoration: none;
+  h2 {
+    background: none;
+    color: @page-color;
+  }
+}
+
+
+.munique {
+  background: url('../images/munique.jpg') center;
+}
+
+.form {
+  background: url('../images/form.jpg') center;
+}
+
+
+
 .side-links {
   position: relative;
   background-color: @neutral-color;
   border-top: 2px solid @main-color;
   margin-top: 30px;
   margin-bottom: 20px;
-  padding: 30px;
+  padding: 5px 1px 10px 30px;
   font-size: 12px;
   color: @neutral-text-color;
 }

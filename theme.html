@@ -56,6 +56,7 @@
               {% if not is_login %}
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
+                  <li><a href="/" class="{{ set_active('/servicos') }}">Página Inicial</a></li>
                   <li><a href="/servicos" class="{{ set_active('/servicos') }}">Serviços</a></li>
                   <li><a href="/guias" class="{{ set_active('/guias') }}">Guias</a></li>
                   <li><a href="/quem-somos" class="{{ set_active('/quem-somos') }}">Quem Somos</a></li>
@@ -75,11 +76,22 @@
 
         {% if is_home or is_tag %}
 
+
+          <div class="video-container" style="position:relative; width:100%; height:0; padding-bottom:60%; margin-top:30px;" >
+          <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.youtube.com/embed/v=XkDrnwmb-fA" frameborder="0" allowfullscreen></iframe>
+          </div>
+        
+
           {% if is_tag %}
           <div class="row">
             <h4>Últimas em "{{ tag|format_tag(False, True) }}"</h4>            
             <hr />
           </div>
+          {% else %}
+          <div class="posts-index">
+            <h4>Publicações</h4>            
+          </div>
+
           {% endif %}
 
           {% if posts %}
@@ -87,11 +99,11 @@
           <div class="row post">
             <div class="span6">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-              <p class="muted">Publicado em {{ post.created_at|format_date }}</p>
+              {# <p class="muted">Publicado em {{ post.created_at|format_date }}</p> #}
 
-              <div class="post-content" data-type-cleanup="true">
-                {{ post.content }}
-              </div>
+              {# <div class="post-content" data-type-cleanup="true"> #}   
+              {#   {{ post.content }}                                #}              
+              {# </div>                                              #}
 
             </div>
           </div>
@@ -101,8 +113,8 @@
           {% if not is_tag %}
           {% if pagination %}
           <div class="pagination">
-            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
+            {# {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %} #}  
+            {# {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}     #}  
           </div>
           {% endif %}
           {% endif %}
@@ -214,8 +226,16 @@
 
         {% if not is_login %}
           <span class="span3 offset1">
+
+            <a class="side-box munique" href="/guia-ca-vou-eu-munique">
+              <h2>Guia Cá Vou Eu Munique</h2>
+            </a>
+
+            <a class="side-box form" href="http://form.cavoueu.com/">
+              <h2>Quero ir para a Alemanha</h2>
+            </a>
+
             <div class="side-links">
-              <p><a href="/guia-ca-vou-eu-munique">Guia Cá Vou Eu Munique</a></p>
               <p>{{ theme.social.follow }}</p>
               <ul class="unstyled social">
                 {% if site.twitter %}
@@ -229,7 +249,7 @@
                 {% if site.facebook %}
                 <li>
                   <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                    <i class="icon-facebook-sign"></i> Facebook
+                    <i class="icon-facebook"></i> Facebook
                   </a>
                 </li>
                 {% endif %}
