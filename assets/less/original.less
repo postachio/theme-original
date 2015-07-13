@@ -13,6 +13,33 @@
 @neutral-text-color: #666666;
 @page-color:         #FFFFFF;
 
+div.testimony {
+  padding: 10px 30px;
+  background-color: beige;
+  & h4 {
+    margin-bottom: 30px;
+  }
+  & blockquote {
+    font-style: italic    
+  }
+  & blockquote:before, & blockquote:after {
+    content: '"';
+  }
+  & li {
+    margin-bottom: 30px;
+    list-style-type: none;
+    &:nth-of-type(even) {
+      img {
+        float: right
+      }
+    }
+    &:nth-of-type(odd) {
+      img {
+        float: left
+      }
+    }
+  }
+}
 
 body {
   font-family: 'Open Sans', helvetica, sans-serif;
@@ -173,7 +200,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   h4 {
     //background-color: rgba(0,0,0,0.4);
-    background: url('../images/red-noise.png') repeat;
+    //background: url('../images/red-noise.png') repeat;
+    background-color: rgb(94, 21, 0);
     color: @page-color;
     font-size: 14px;
     margin: 0 0 17px 0;
@@ -192,7 +220,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 99px;
   h2 {
     //background-color: rgba(0,0,0,0.4);
-    background: url('../images/red-noise.png') repeat;
+    //background: url('../images/red-noise.png') repeat;
+    background-color: rgb(94, 21, 0);
     color: @page-color;
     font-size: 14px;
     font-weight: bold;

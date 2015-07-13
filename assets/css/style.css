@@ -174,6 +174,30 @@
 }
 /* IE7 */
 /* used for styling post content in themes */
+div.testimony {
+  padding: 10px 30px;
+  background-color: beige;
+}
+div.testimony h4 {
+  margin-bottom: 30px;
+}
+div.testimony blockquote {
+  font-style: italic;
+}
+div.testimony blockquote:before,
+div.testimony blockquote:after {
+  content: '"';
+}
+div.testimony li {
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+div.testimony li:nth-of-type(even) img {
+  float: right;
+}
+div.testimony li:nth-of-type(odd) img {
+  float: left;
+}
 body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
@@ -466,7 +490,7 @@ h6 {
   margin-top: 30px;
 }
 .posts-index h4 {
-  background: url('../images/red-noise.png') repeat;
+  background-color: #5e1500;
   color: #ffffff;
   font-size: 14px;
   margin: 0 0 17px 0;
@@ -481,7 +505,7 @@ h6 {
   height: 99px;
 }
 .side-box h2 {
-  background: url('../images/red-noise.png') repeat;
+  background-color: #5e1500;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
