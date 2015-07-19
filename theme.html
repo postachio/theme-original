@@ -123,24 +123,6 @@
           <p><em>No posts yet :(</em></p>
           {% endif %}
 
-          <div class="testimony">
-            <h4>Testemunhos</h4>
-            <ul>
-              <li>
-                <img src="user_photo.jpg" alt="">
-                <blockquote>Amet maiores tempora eum nam veritatis vel laudantium! Sapiente harum adipisci porro deleniti corrupti iure culpa ipsam perspiciatis natus. Culpa.</blockquote>
-              </li>
-              <li>
-                <img src="user_photo.jpg" alt="">
-                <blockquote>Ipsum expedita iste aperiam quasi distinctio labore dignissimos tempore minus. Sapiente repellendus tempore suscipit eos cupiditate fuga nam magni enim?</blockquote>
-              </li>
-              <li>
-                <img src="user_photo.jpg" alt="">
-                <blockquote>Sit excepturi qui illo aperiam similique eius? Placeat distinctio exercitationem neque optio dignissimos. Rerum praesentium esse odit enim iusto earum.</blockquote>
-              </li>
-            </ul>
-            <p></p>
-          </div>
         {% elif is_post %}
 
           <div class="post">
@@ -311,16 +293,38 @@
       </div>
 
       <div class="row">
+        <div class="testimony span10 offset1">
+          <div class='testimony-header'></div>
+          <ul>
+            <li>
+              <img src="../../assets/images/no_user.png" alt="">
+              <blockquote>Amet maiores tempora eum nam veritatis vel laudantium! Sapiente harum adipisci porro deleniti corrupti iure culpa ipsam perspiciatis natus. Culpa.</blockquote>
+            </li>
+            <li>
+              <img src="../../assets/images/no_user.png" alt="">
+              <blockquote>Ipsum expedita iste aperiam quasi distinctio labore dignissimos tempore minus. Sapiente repellendus tempore suscipit eos cupiditate fuga nam magni enim?</blockquote>
+            </li>
+            <li>
+              <img src="../../assets/images/no_user.png" alt="">
+              <blockquote>Sit excepturi qui illo aperiam similique eius? Placeat distinctio exercitationem neque optio dignissimos. Rerum praesentium esse odit enim iusto earum.</blockquote>
+            </li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="span10 offset1">
           <footer>
             &copy; <a href="/">Cá Vou Eu</a>.
           </footer>
         </div>
       </div>
+
     </div>
 
-    {% endif %}
 
+    {% endif %}
     {{ footer_meta }}
 
     <script src="http://postach.io/static/themes/_assets/bootstrap/js/bootstrap.min.js" /></script>

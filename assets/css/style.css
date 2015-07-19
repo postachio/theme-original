@@ -175,8 +175,15 @@
 /* IE7 */
 /* used for styling post content in themes */
 div.testimony {
-  padding: 10px 30px;
+  padding: 20px 30px 10px 30px;
   background-color: beige;
+  box-sizing: border-box;
+}
+div.testimony div.testimony-header {
+  height: 60px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  background: url('../images/ca-vou-eu.png') no-repeat;
 }
 div.testimony h4 {
   margin-bottom: 30px;
@@ -194,9 +201,11 @@ div.testimony li {
 }
 div.testimony li:nth-of-type(even) img {
   float: right;
+  padding: 0 20px;
 }
 div.testimony li:nth-of-type(odd) img {
   float: left;
+  padding: 0 20px;
 }
 body {
   font-family: 'Open Sans', helvetica, sans-serif;
@@ -490,7 +499,7 @@ h6 {
   margin-top: 30px;
 }
 .posts-index h4 {
-  background-color: #5e1500;
+  background-color: #F18200;
   color: #ffffff;
   font-size: 14px;
   margin: 0 0 17px 0;
@@ -505,7 +514,7 @@ h6 {
   height: 99px;
 }
 .side-box h2 {
-  background-color: #5e1500;
+  background-color: #F18200;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
