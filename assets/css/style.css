@@ -199,6 +199,10 @@ div.testimony li {
   margin-bottom: 30px;
   list-style-type: none;
 }
+div.testimony li img.testimony-photo {
+  width: 100px;
+  height: auto;
+}
 div.testimony li:nth-of-type(even) img {
   float: right;
   padding: 0 20px;

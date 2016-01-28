@@ -80,16 +80,16 @@
           <div class="video-container" style="position:relative; width:100%; height:0; padding-bottom:60%; margin-top:30px;" >
           <iframe style="position:absolute; top:0; left:0; width:100%; height:100%;" src="https://www.youtube.com/embed/XkDrnwmb-fA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
-        
+
 
           {% if is_tag %}
           <div class="row">
-            <h4>Últimas em "{{ tag|format_tag(False, True) }}"</h4>            
+            <h4>Últimas em "{{ tag|format_tag(False, True) }}"</h4>
             <hr />
           </div>
           {% else %}
           <div class="posts-index">
-            <h4>Publicações</h4>            
+            <h4>Publicações</h4>
           </div>
 
           {% endif %}
@@ -101,8 +101,8 @@
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
               {# <p class="muted">Publicado em {{ post.created_at|format_date }}</p> #}
 
-              {# <div class="post-content" data-type-cleanup="true"> #}   
-              {#   {{ post.content }}                                #}              
+              {# <div class="post-content" data-type-cleanup="true"> #}
+              {#   {{ post.content }}                                #}
               {# </div>                                              #}
 
             </div>
@@ -113,8 +113,8 @@
           {% if not is_tag %}
           {% if pagination %}
           <div class="pagination">
-            {# {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %} #}  
-            {# {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}     #}  
+            {# {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %} #}
+            {# {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}     #}
           </div>
           {% endif %}
           {% endif %}
@@ -137,7 +137,7 @@
 
             {% if post.tags %}
             <ul class="tags">
-              {% for tag in post.tags %}                
+              {% for tag in post.tags %}
                 {% if tag in allowed_tags %}
                   <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
                 {% endif %}
@@ -297,16 +297,20 @@
           <div class='testimony-header'></div>
           <ul>
             <li>
-              <img src="../../assets/images/no_user.png" alt="">
-              <blockquote>Amet maiores tempora eum nam veritatis vel laudantium! Sapiente harum adipisci porro deleniti corrupti iure culpa ipsam perspiciatis natus. Culpa.</blockquote>
+              <img src="../../assets/images/cavoueu-joel.jpg" alt="" class="testimony-photo">
+              <blockquote>Após o término do curso de Medicina decidi aprender alemão com o objetivo de alargar as minhas possibilidades profissionais. O Cá Vou Eu ajudou-me a encontrar um curso de alemão personalizado e estadia. Gostei tanto desta experiência que acabei por ajudar o pessoal deste projeto fantástico a criar vídeos de divulgação. Obrigado pela ajuda e pela diversão! - <b>Joel Monteiro</b>, Estudante de Alemão (Munique)</blockquote>
             </li>
             <li>
-              <img src="../../assets/images/no_user.png" alt="">
-              <blockquote>Ipsum expedita iste aperiam quasi distinctio labore dignissimos tempore minus. Sapiente repellendus tempore suscipit eos cupiditate fuga nam magni enim?</blockquote>
+              <img src="../../assets/images/cavoueu-dina.jpg" alt="" class="testimony-photo">
+              <blockquote>Tenho de agragecer ao Cá Vou por me ter ajudado a arranjar um novo trabalho em Munique. Obrigada por me ajudarem a criar o meu futuro. - <b>Dina Duarte</b>, Enfermeira a exercer no Deutsches Herzzentrum (Munique)</blockquote>
             </li>
             <li>
-              <img src="../../assets/images/no_user.png" alt="">
-              <blockquote>Sit excepturi qui illo aperiam similique eius? Placeat distinctio exercitationem neque optio dignissimos. Rerum praesentium esse odit enim iusto earum.</blockquote>
+              <img src="../../assets/images/cavoueu-luisa.jpg" alt="" class="testimony-photo">
+              <blockquote>O Cá Vou Eu fez com que fosse possivel tornar-me uma enfermeira reconhecida na Alemanha, arranjar trabalho e casa em Munique. Se não fosse por eles não teria sabido tratar dos papéis para o Annerkennung (reconhecimento profissional). - <b>Luísa Vieira</b>, Enfermeira a exercer na empresa Ambulanter Pflegedienst Endres (Munique)</blockquote>
+            </li>
+            <li>
+              <img src="../../assets/images/cavoueu-hugo.jpg" alt="" class="testimony-photo">
+              <blockquote>Através do Cá Vou Eu consegui arranjar entrevista na ProSiebenSat.1 e ficar com o emprego. Obrigado por me terem dado a conhecer esta empresa à procura de engenheiros informáticos em Portugal. Obrigado Cá Vou Eu! - <b>Hugo Marinho</b>, Engenheiro Informático na ProSiebenSat.1 (Unterföhring)</blockquote>
             </li>
           </ul>
           <p></p>
