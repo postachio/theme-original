@@ -28,6 +28,7 @@ div.testimony {
   & h4 {
     margin-bottom: 30px;
   }
+  
   & blockquote {
     font-style: italic;   
   }
@@ -35,19 +36,26 @@ div.testimony {
     content: '"';
   }
   & li {
+    margin-bottom: 50px;
+    list-style-type: none;
+
     img.testimony-photo {
       width: 100px;
       height: auto;
     }
 
-    margin-bottom: 30px;
-    list-style-type: none;
     &:nth-of-type(even) {
       img {
         float: right;
         padding: 0 20px;
       }
     }
+
+    &:nth-of-type(even) blockquote {
+      border-left: none;
+      border-right: 5px solid #eee;
+    }
+
     &:nth-of-type(odd) {
       img {
         float: left;

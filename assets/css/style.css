@@ -196,7 +196,7 @@ div.testimony blockquote:after {
   content: '"';
 }
 div.testimony li {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   list-style-type: none;
 }
 div.testimony li img.testimony-photo {
@@ -206,6 +206,10 @@ div.testimony li img.testimony-photo {
 div.testimony li:nth-of-type(even) img {
   float: right;
   padding: 0 20px;
+}
+div.testimony li:nth-of-type(even) blockquote {
+  border-left: none;
+  border-right: 5px solid #eee;
 }
 div.testimony li:nth-of-type(odd) img {
   float: left;
